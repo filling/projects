@@ -1,0 +1,29 @@
+div.accordion {
+  border:solid 1px #444;
+  width:50%;
+  margin:0;
+  padding:0;  
+  background-color:#666
+}
+h3 {
+  background-color:#ccc;
+  margin: 0;
+  padding: 5px 0;
+}
+
+div.accordion div {
+  overflow:hidden;
+  height:0px;
+  -moz-transition: height 1s ease-in-out;
+    -o-transition: height 1s ease-in-out;
+    -webkit-transition: height 1s ease-in-out;
+    transition: height 1s ease-in-out;
+}
+
+div.accordion.open div {
+  height:50px;
+  -moz-transition: height 1s ease-in-out;
+    -o-transition: height 1s ease-in-out;
+    -webkit-transition: height 1s ease-in-out;
+    transition: height 1s ease-in-out;
+}

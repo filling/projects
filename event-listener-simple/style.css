@@ -1,0 +1,15 @@
+#container div {
+  height: 50px;
+  width: 50px;
+  margin: 5px;
+  float: left;
+}
+#container div.red {
+  background-color: #f00;
+}
+#container div:nth-child(3n + 1) {
+  clear: left;
+}
+#container div.blue {
+  background-color: #00f;
+}
