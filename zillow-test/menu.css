@@ -25,6 +25,37 @@ html, body, section {
 	text-decoration:none;
 }
 
+.button ul {
+	background-color:#cff;
+	padding: 0;
+	width:200px;
+	margin-top:6px;
+}
+
+.button ul li {
+	width:100%;
+	list-style-type:none;
+}
+
+.button ul li a {
+	color:#fff;
+	text-decoration:none;
+}
+
+.button li li {
+	display:none;
+}
+
+.button.open .open ul {
+	position:absolute;
+	top:75px;
+	left:275px;
+}
+
+.button.open .open li {
+	display:inline-block;
+}
+
 .button.open {
 	overflow:visible;
 	-moz-transition: height 5s ease-in-out;
