@@ -8,18 +8,21 @@ html, body, section {
 }
 
 section div {
-	display: inline-block;
 	height:100%;
-	float:left;
 }
 
 div#left {
 	width:180px;
 	background-color:red;
+	float:left;
 }
 
 div#middle {
-	width:500px;
+	overflow:hidden;
+}
+
+div#middle div {
+	width:100%;
 	background-color:green;
 }
 
