@@ -1,0 +1,17 @@
+var mincount = 5;
+var maxcount = 10;
+
+//show top results
+$("ol.result-list li").slice(5).hide();
+
+//show more results when scrolled to the bottom of the page, offset by 1200 pixels
+$(window).scroll(function() {
+    if( $(window).scrollTop() + $(window).height() >= $(document).height() - 1200 ) {
+        console.log('end');
+        $("ol.result-list li").slice(mincount,maxcount).fadeIn(2000);
+
+        mincount = mincount+5;
+        maxcount = maxcount+5
+
+    }
+});
